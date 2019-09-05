@@ -40,7 +40,7 @@ char		*ft_itoa(int n)
 	if (str)
 	{
 		str[l] = '\0';
-		if (n < 0)
+		if (neg)
 			str[0] = '-';
 		while (--l + (neg ? 0 : 1))
 		{
