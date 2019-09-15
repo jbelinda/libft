@@ -6,14 +6,17 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:49:23 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/04 21:13:53 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/15 17:51:20 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define ABS(x)	((x) < 0 ? -(x) : (x))
+static inline int ft_abs(int i)
+{
+	return (i < 0 ? -i : i );
+}
 
 static int	ft_number_length(int n)
 {
@@ -44,7 +47,7 @@ char		*ft_itoa(int n)
 			str[0] = '-';
 		while (--l + (neg ? 0 : 1))
 		{
-			str[l] = ABS(n % 10) + '0';
+			str[l] = ft_abs(n % 10) + '0';
 			n /= 10;
 		}
 	}

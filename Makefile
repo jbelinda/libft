@@ -73,11 +73,12 @@ SRC +=					\
 #	   ft_lstmap.c
 
 #
-# My own
+# Extra
 #
 SRC +=					\
 	   ft_isupper.c		\
-	   ft_islower.c
+	   ft_islower.c		\
+	   ft_isspace.c
 
 OBJ = $(SRC:.c=.o)
 INC = $(NAME).h

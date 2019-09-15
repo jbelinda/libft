@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 16:12:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/04 17:33:28 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/15 17:46:33 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,6 @@ void	ft_putnbr_fd(int n, int fd);
 
 int		ft_isupper(int c);
 int 	ft_islower(int c);
+int 	ft_isspace(int c);
 
 #endif
