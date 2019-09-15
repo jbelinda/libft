@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:49:23 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/15 17:51:20 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/15 19:45:37 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,10 @@ static int	ft_number_length(int n)
 {
 	int l;
 
-	l = n < 0 ? 1 : 0;
-	while (n)
-	{
+	l = n < 0 ? 2 : 1;
+	while (n /= 10)
 		++l;
-		n /= 10;
-	}
-	return (l ? l : 1);
+	return (l);
 }
 
 char		*ft_itoa(int n)
