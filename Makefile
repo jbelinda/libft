@@ -29,7 +29,7 @@ SRC =				\
 	   ft_strcmp.c	\
 	   ft_strncmp.c	\
 	   ft_strstr.c	\
-#	   ft_strnstr.c	\
+	   ft_strnstr.c	\
 #	   ft_atoi.c	\
 
 #
