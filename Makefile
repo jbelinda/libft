@@ -46,7 +46,7 @@ SRC +=					\
 	   ft_putendl_fd.c	\
 	   ft_putnbr_fd.c	\
 	   ft_memalloc.c	\
-#	   ft_memdel.c		\
+	   ft_memdel.c		\
 #	   ft_strnew.c		\
 #	   ft_strdel.c		\
 #	   ft_strclr.c		\
