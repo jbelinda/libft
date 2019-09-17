@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 22:10:32 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/17 22:45:30 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/17 23:14:26 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,9 @@ char	*ft_strstr(const char *haystack, const char *needle)
 {
 	char	*s;
 	size_t	nlen;
-	size_t	hlen;
 
-	if (*needle == EOS)
+	if (!(nlen = ft_strlen(needle)))
 		return ((char *)haystack);
-	nlen = ft_strlen(needle);
-	hlen = ft_strlen(haystack);
 	while ((s = ft_strchr(haystack, *needle)) != NULL)
 		if (ft_strncmp(s, needle, nlen) == 0)
 			return (s);
