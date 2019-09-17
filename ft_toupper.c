@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 18:44:42 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/17 18:47:59 by jbelinda         ###   ########.fr       */
+/*   Created: 2019/09/17 19:33:47 by jbelinda          #+#    #+#             */
+/*   Updated: 2019/09/17 19:36:02 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-char	*ft_strncpy(char *dst, const char *src, size_t n)
+int	ft_toupper(int c)
 {
-	unsigned char		*to;
-	const unsigned char *from;
-
-	to = (unsigned char *)dst;
-	from = (const unsigned char *)src;
-	while (n--)
-		if ((*to++ = *from++) == '\0')
-		{
-			while (n--)
-				*to++ = '\0';
-			break ;
-		}
-	return (dst);
+	return (ft_islower(c) ? (c & ~040) : c);
 }

@@ -21,6 +21,8 @@ SRC =				\
 	   ft_strncpy.c	\
 	   ft_strcat.c	\
 	   ft_strncat.c	\
+	   ft_toupper.c	\
+	   ft_tolower.c	\
 #	   ft_strlcat.c	\
 #	   ft_strchr.c	\
 #	   ft_strrchr.c	\
@@ -29,8 +31,6 @@ SRC =				\
 #	   ft_strcmp.c	\
 #	   ft_strncmp.c	\
 #	   ft_atoi.c	\
-#	   ft_toupper.c	\
-#	   ft_tolower.c
 
 #
 # Part 2

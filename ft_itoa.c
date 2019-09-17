@@ -6,19 +6,19 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:49:23 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/15 19:45:37 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/17 18:43:13 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdbool.h>
 
-static inline int ft_abs(int i)
+static inline int	ft_abs(int i)
 {
-	return (i < 0 ? -i : i );
+	return (i < 0 ? -i : i);
 }
 
-static int	ft_number_length(int n)
+static int			ft_number_length(int n)
 {
 	int l;
 
@@ -28,7 +28,7 @@ static int	ft_number_length(int n)
 	return (l);
 }
 
-char		*ft_itoa(int n)
+char				*ft_itoa(int n)
 {
 	char	*str;
 	bool	neg;
