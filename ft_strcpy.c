@@ -19,5 +19,5 @@ char	*ft_strcpy(char *dst, const char *src)
 	unsigned char *to;
 
 	to = ft_memccpy((void *)dst, (const void *)src, (int)EOS, ULONG_MAX);
-	return (dst);
+	return ((void *)(to = (unsigned char *)dst));
 }
