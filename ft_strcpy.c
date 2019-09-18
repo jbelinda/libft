@@ -18,6 +18,6 @@ char	*ft_strcpy(char *dst, const char *src)
 {
 	unsigned char *to;
 
-	to = ft_memccpy((void *)dst, (const void *)src, (int)'\0', SIZE_T_MAX);
+	to = ft_memccpy((void *)dst, (const void *)src, (int)EOS, ULONG_MAX);
 	return (dst);
 }
