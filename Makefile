@@ -85,7 +85,7 @@ SRC +=					\
 OBJ = $(SRC:.c=.o)
 INC = $(NAME).h
 TGT = $(NAME).a
-CC = clang
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(TGT)
