@@ -1,4 +1,4 @@
-NAME = libft
+NAME = libft.a
 #
 # Part 1
 #
@@ -84,15 +84,14 @@ SRC +=					\
 
 OBJ = $(SRC:.c=.o)
 INC = $(NAME).h
-TGT = $(NAME).a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-all: $(TGT)
+all: $(NAME)
 
-$(TGT): $(OBJ)
-	ar -rc $(TGT) $(OBJ)
-	ranlib $(TGT)
+$(NAME): $(OBJ)
+	ar -rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 %.o: %.c $(INC)
 	$(CC) $(CFLAGS) -c $<
@@ -101,6 +100,6 @@ clean:
 	rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(TGT)
+	rm -f $(NAME)
 
 re: fclean all
