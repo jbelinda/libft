@@ -75,5 +75,7 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_isupper(int c);
 int		ft_islower(int c);
 int		ft_isspace(int c);
+void	ft_memrelease(void **a);
+char	*ft_strndup(const char *s, size_t n);
 
 #endif
