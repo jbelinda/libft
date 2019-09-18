@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/19 01:25:53 by jbelinda          #+#    #+#             */
+/*   Updated: 2019/09/19 01:28:57 by jbelinda         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"
 
@@ -8,7 +20,7 @@ char	*ft_strndup(const char *s, size_t n)
 
 	len = ft_strlen(s);
 	len = (len < n ? len : n);
-	if ((dup = (char *)malloc(sizeof(char) *(len + 1))) != NULL)
+	if ((dup = (char *)malloc(sizeof(char) * (len + 1))) != NULL)
 	{
 		ft_memcpy((void *)dup, (const void *)s, len);
 		dup[len] = EOS;
