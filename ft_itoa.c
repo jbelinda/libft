@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:49:23 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 02:00:06 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:07:21 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdbool.h>
 #include "libft.h"
 
 static inline int	ft_abs(int i)
@@ -36,7 +35,7 @@ char				*ft_itoa(int n)
 
 	neg = (n < 0);
 	l = ft_number_length(n);
-	str = ft_strnew(sizeof(char) * (l + 1));
+	str = ft_strnew(sizeof(char) * l);
 	if (str)
 	{
 		str[l] = '\0';

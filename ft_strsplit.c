@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 01:26:12 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 01:30:56 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:18:18 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static unsigned	word_count(const char *s, char c)
@@ -36,9 +35,8 @@ char			**ft_strsplit(char const *s, char c)
 	const char	*e;
 	char		**table;
 
-	if ((i = word_count(s, c)) == 0)
-		return (NULL);
-	if ((table = (char **)ft_memalloc(sizeof(char *) * (i + 1))) != NULL)
+	i = word_count(s, c) + 1;
+	if ((table = (char **)ft_memalloc(sizeof(char *) * i)) != NULL)
 	{
 		i = 0;
 		e = s;

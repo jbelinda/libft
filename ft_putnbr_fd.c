@@ -6,21 +6,42 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 17:52:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/04 21:16:51 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:12:18 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+static inline int	ft_abs(int i)
 {
-	char *s;
+	return (i < 0 ? -i : i);
+}
 
-	s = ft_itoa(n);
-	if (s)
+static int			ft_number_length(int n)
+{
+	int l;
+
+	l = n < 0 ? 2 : 1;
+	while (n /= 10)
+		++l;
+	return (l);
+}
+
+void				ft_putnbr_fd(int n, int fd)
+{
+	char	str[12];
+	bool	neg;
+	int		l;
+
+	neg = (n < 0);
+	l = ft_number_length(n);
+	str[l] = '\0';
+	if (neg)
+		str[0] = '-';
+	while (--l + (neg ? 0 : 1))
 	{
-		ft_putstr_fd(s, fd);
-		free(s);
+		str[l] = ft_abs(n % 10) + '0';
+		n /= 10;
 	}
+	ft_putstr_fd(str, fd);
 }

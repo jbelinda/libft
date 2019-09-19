@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 01:25:53 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 01:28:57 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:17:36 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strndup(const char *s, size_t n)

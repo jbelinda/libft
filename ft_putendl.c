@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 17:29:02 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/04 17:46:54 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:11:29 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl(char const *s)

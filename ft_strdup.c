@@ -6,12 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 18:44:28 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/17 18:44:30 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:16:07 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

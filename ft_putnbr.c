@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 18:06:05 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/04 18:07:29 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:12:06 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr(int n)

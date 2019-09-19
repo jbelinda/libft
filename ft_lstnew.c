@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 03:00:52 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 03:16:53 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:08:21 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 t_list	*ft_lstnew(const void *content, size_t content_size)

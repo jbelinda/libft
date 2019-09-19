@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 01:26:28 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 01:26:32 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:18:43 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)

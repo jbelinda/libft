@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 02:37:09 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/18 02:38:16 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 18:43:36 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 void	ft_memdel(void **ap)
 {
-	if (*ap)
-		free(*ap);
-	*ap = NULL;
+	if (ap)
+	{
+		if (*ap)
+			free(*ap);
+		*ap = NULL;
+	}
 }

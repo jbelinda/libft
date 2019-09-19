@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/10 20:58:51 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 01:36:45 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:06:35 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	ft_bzero(void *dst, size_t len)

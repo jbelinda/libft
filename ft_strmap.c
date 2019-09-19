@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 01:25:34 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 01:25:40 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:17:00 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))

@@ -6,11 +6,10 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 02:01:13 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 04:32:53 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/19 19:06:21 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdbool.h>
 #include "libft.h"
 
 int		ft_atoi(const char *str)
