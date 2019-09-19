@@ -64,13 +64,13 @@ SRC +=					\
 #
 # Part Bonus
 #
-#SRC +=					\
-#	   ft_lstnew.c		\
-#	   ft_lstdelone.c	\
-#	   ft_lstdel.c		\
-#	   ft_lstadd.c		\
-#	   ft_lstiter.c		\
-#	   ft_lstmap.c
+SRC +=					\
+	   ft_lstnew.c		\
+	   ft_lstdelone.c	\
+	   ft_lstdel.c		\
+	   ft_lstadd.c		\
+	   ft_lstiter.c		\
+	   ft_lstmap.c
 
 #
 # Extra
@@ -83,9 +83,10 @@ SRC +=					\
 	   ft_strndup.c
 
 OBJ = $(SRC:.c=.o)
-INC = $(NAME).h
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+
+.PHONY:	all, clean, fclean, re
 
 all: $(NAME)
 
@@ -93,7 +94,7 @@ $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
-%.o: %.c $(INC)
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $<
 
 clean:
