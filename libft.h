@@ -6,16 +6,15 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 16:12:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 19:05:58 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/20 01:42:29 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
-# include <stdbool.h>
+# include <string.h>
 # include <unistd.h>
 
 # define EOL	('\n')

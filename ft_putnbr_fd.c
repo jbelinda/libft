@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 17:52:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 19:12:18 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/20 01:44:14 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int			ft_number_length(int n)
 void				ft_putnbr_fd(int n, int fd)
 {
 	char	str[12];
-	bool	neg;
+	int		neg;
 	int		l;
 
 	neg = (n < 0);

@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 02:01:13 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 19:06:21 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/20 01:43:39 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 int		ft_atoi(const char *str)
 {
 	int		res;
-	bool	neg;
+	int		neg;
 
 	res = 0;
-	neg = false;
+	neg = 0;
 	while (ft_isspace(*str))
 		str++;
 	if (*str == '+' || *str == '-')
