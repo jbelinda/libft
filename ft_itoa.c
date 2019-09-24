@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:49:23 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/20 01:44:03 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/24 04:00:48 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char				*ft_itoa(int n)
 	str = ft_strnew(sizeof(char) * l);
 	if (str)
 	{
-		str[l] = '\0';
 		if (neg)
 			str[0] = '-';
 		while (--l + (neg ? 0 : 1))

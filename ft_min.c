@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/19 03:37:45 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/23 02:52:43 by jbelinda         ###   ########.fr       */
+/*   Created: 2019/09/23 03:02:34 by jbelinda          #+#    #+#             */
+/*   Updated: 2019/09/23 03:06:16 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+size_t	ft_min(size_t x, size_t y)
 {
-	t_list	*todel;
-	t_list	*next;
-
-	todel = *alst;
-	while (todel)
-	{
-		next = todel->next;
-		(*del)(todel->content, todel->content_size);
-		free(todel);
-		todel = next;
-	}
-	*alst = NULL;
+	return (x <= y ? x : y);
 }

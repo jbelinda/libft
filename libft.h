@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 16:12:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/20 01:42:29 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/23 03:05:07 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,8 @@ int					ft_islower(int c);
 int					ft_isspace(int c);
 void				ft_memrelease(void **a);
 char				*ft_strndup(const char *s, size_t n);
+size_t				ft_min(size_t x, size_t y);
+size_t				ft_max(size_t x, size_t y);
 
 typedef struct		s_list
 {

@@ -6,18 +6,13 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 20:17:01 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 19:16:45 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/23 03:02:26 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static inline size_t	ft_min(size_t x, size_t y)
-{
-	return (x <= y ? x : y);
-}
-
-size_t					ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		dstlen;
 	size_t		i;
@@ -30,6 +25,6 @@ size_t					ft_strlcat(char *dst, const char *src, size_t size)
 		dstlen++;
 	}
 	if (i < size)
-		dst[dstlen] = EOS;
+		dst[dstlen] = '\0';
 	return (ft_strlen(src) + i);
 }
