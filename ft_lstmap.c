@@ -6,25 +6,35 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 04:18:39 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/19 19:08:15 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/09/26 03:19:04 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+static void	ft_lst_killer(void *c, size_t cs)
+{
+	if (c)
+		ft_memdel(&c);
+	(void)cs;
+}
+
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*newlst;
 	t_list	*el;
 
-	if (lst == NULL || (el = ft_lstnew(NULL, 0)) == NULL)
+	if ((el = (*f)(lst)) == NULL)
 		return (NULL);
-	el = (*f)(lst);
 	newlst = el;
 	while (lst->next)
 	{
 		lst = lst->next;
-		el->next = (*f)(lst);
+		if ((el->next = (*f)(lst)) == NULL)
+		{
+			ft_lstdel(&newlst, ft_lst_killer);
+			return (NULL);
+		}
 		el = el->next;
 	}
 	return (newlst);
