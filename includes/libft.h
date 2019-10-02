@@ -78,7 +78,7 @@ int					ft_isupper(int c);
 int					ft_islower(int c);
 int					ft_isspace(int c);
 void				ft_memrelease(void **a);
-void				ft_memjoin(const void *s1, size_t n1, const void *s2, size_t n2)
+void				*ft_memjoin(const void *s1, size_t n1, const void *s2, size_t n2);
 char				*ft_strndup(const char *s, size_t n);
 size_t				ft_min(size_t x, size_t y);
 size_t				ft_max(size_t x, size_t y);
