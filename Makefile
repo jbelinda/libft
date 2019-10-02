@@ -92,13 +92,15 @@ SRC +=					\
 	   ft_islower.c		\
 	   ft_isspace.c		\
 	   ft_memrelease.c	\
+	   ft_memjoin.c		\
 	   ft_strndup.c		\
 	   ft_min.c			\
 	   ft_max.c
 
 OBJ = $(SRC:.c=.o)
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CC = clang
+INC = includes/
+CFLAGS = -Wall -Wextra -Werror -I ${INC)
 
 .PHONY:	all, clean, fclean, re
 
