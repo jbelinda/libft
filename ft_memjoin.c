@@ -18,8 +18,10 @@ void	*ft_memjoin(const void *s1, size_t n1, const void *s2, size_t n2)
 
 	if ((dst = malloc(n1 + n2)))
 	{
-		dst = ft_memcpy(dst, s1, n1);
-		dst = ft_memcpy(dst + (n1 ? 1 : 0), s2, n2);
+		if (n1)
+			dst = ft_memcpy(dst, s1, n1);
+		if (n2)
+			dst = ft_memcpy(dst + (n1 ? 1 : 0), s2, n2);
 	}
 	return (dst);
 }
