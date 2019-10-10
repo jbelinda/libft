@@ -6,7 +6,7 @@
 #    By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/19 18:52:47 by jbelinda          #+#    #+#              #
-#    Updated: 2019/09/23 03:05:35 by jbelinda         ###   ########.fr        #
+#    Updated: 2019/10/10 04:09:08 by jbelinda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,7 +100,7 @@ SRC +=					\
 OBJ = $(SRC:.c=.o)
 CC = clang
 INC = includes/
-CFLAGS = -Wall -Wextra -Werror -I $(INC)
+CFLAGS = -g -Wall -Wextra -Werror -I $(INC)
 
 .PHONY:	all, clean, fclean, re
 
