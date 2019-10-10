@@ -100,7 +100,7 @@ SRC +=					\
 OBJ = $(SRC:.c=.o)
 CC = clang
 INC = includes/
-CFLAGS = -g -Wall -Wextra -Werror -I $(INC)
+CFLAGS += -Wall -Wextra -Werror -I $(INC)
 
 .PHONY:	all, clean, fclean, re
 
