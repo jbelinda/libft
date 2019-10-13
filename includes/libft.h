@@ -6,7 +6,7 @@
 /*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 16:12:59 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/09/23 03:05:07 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/10/13 01:57:17 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,9 @@ int					ft_isupper(int c);
 int					ft_islower(int c);
 int					ft_isspace(int c);
 void				ft_memrelease(void **a);
-void				*ft_memjoin(const void *s1, size_t n1, const void *s2, size_t n2);
+void				*ft_memjoin(const void *s1, size_t n1,
+								const void *s2, size_t n2);
+void				*ft_memrealloc(const void *p, size_t ps, size_t ns);
 char				*ft_strndup(const char *s, size_t n);
 size_t				ft_min(size_t x, size_t y);
 size_t				ft_max(size_t x, size_t y);
