@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memrealloc.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
+/*   By: jbelinda <jbelinda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 01:39:15 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/10/13 06:25:30 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/10/16 04:43:20 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memrealloc(const void *p, size_t psize, size_t nsize)
 
 	new = (void *)p;
 	if (nsize)
-		if ((new = ft_memalloc(psize + nsize)) && p)
-			new = ft_memcpy(new, p, psize);
+		if ((new = ft_memalloc(nsize)) && p)
+			new = ft_memcpy(new, p, ft_min(psize, nsize));
 	return (new);
 }
