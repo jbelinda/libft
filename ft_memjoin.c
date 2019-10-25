@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbelinda <jbelinda@42.fr>                  +#+  +:+       +#+        */
+/*   By: jbelinda <jbelinda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 18:44:21 by jbelinda          #+#    #+#             */
-/*   Updated: 2019/10/11 15:03:51 by jbelinda         ###   ########.fr       */
+/*   Updated: 2019/10/25 20:42:00 by jbelinda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@ void	*ft_memjoin(const void *s1, size_t n1, const void *s2, size_t n2)
 {
 	void	*dst;
 	void	*d;
+	size_t	total;
 
-	if ((dst = malloc(n1 + n2)))
+	dst = NULL;
+	total = n1 + n2;
+	if (total && total > ft_max(n1, n2) && (dst = malloc(total)))
 	{
 		d = dst;
 		if (n1)
