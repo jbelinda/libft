@@ -2,3 +2,5 @@
 *.a
 *.gch
 test*
+.vscode
+.vs
