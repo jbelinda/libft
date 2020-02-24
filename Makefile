@@ -94,6 +94,8 @@ SRC +=					\
 	   ft_memrelease.c	\
 	   ft_memrealloc.c	\
 	   ft_memjoin.c		\
+	   ft_putstrn.c		\
+	   ft_putstrn_fd.c	\
 	   ft_strndup.c		\
 	   ft_min.c			\
 	   ft_max.c
