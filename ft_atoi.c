@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Checking for an overflow here is a complete bull-shit
+*/
+
 int		ft_atoi(const char *str)
 {
 	int		res;
