@@ -98,7 +98,8 @@ SRC +=					\
 	   ft_putstrn_fd.c	\
 	   ft_strndup.c		\
 	   ft_min.c			\
-	   ft_max.c
+	   ft_max.c			\
+	   ft_rand.c
 
 OBJ = $(SRC:.c=.o)
 CC = clang

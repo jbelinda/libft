@@ -20,6 +20,8 @@
 # define EOL	'\n'
 # define EOS	'\0'
 
+# define FT_RAND_MAX	32767
+
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
@@ -86,6 +88,8 @@ void				*ft_memrealloc(const void *p, size_t ps, size_t ns);
 char				*ft_strndup(const char *s, size_t n);
 size_t				ft_min(size_t x, size_t y);
 size_t				ft_max(size_t x, size_t y);
+int					ft_rand(void);
+void				ft_srand(unsigned int seed);
 
 typedef struct		s_list
 {
